@@ -69,12 +69,33 @@ body {
 }
 
 .themeToggle {
+  display: flex;
+  align-items: center;
   margin-top: 50px;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background-color: rgba(255, 255, 0, 0.438);
+  width: 100px;
+  height: 65px;
+  border-radius: 50px;
+  background-color: #31312d;
   cursor: pointer;
+  position: relative;
+  transition: background-color 1s;
+}
+.themeToggle .onOff {
+  display: flex;
+  position: absolute;
+  height: 95%;
+  width: 60px;
+  border-radius: 50%;
+  background-image: linear-gradient(-100deg, #757171, #000);
+  transition: 0.7s ease-in-out;
+}
+
+.themeToggle.active {
+  background-color: rgba(81, 73, 151, 0.199);
+}
+.themeToggle.active .onOff.active {
+  background-image: linear-gradient(90deg, #0f0f11, #d4d3d3);
+  transform: translateX(40px);
 }
 
 @media (max-width: 720px) {

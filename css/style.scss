@@ -78,12 +78,35 @@ body {
 }
 
 .themeToggle {
+  display: flex;
+  align-items: center;
   margin-top: 50px;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background-color: rgba(255, 255, 0, 0.438);
+  width: 100px;
+  height: 65px;
+  border-radius: 50px;
+  background-color: rgb(49, 49, 45);
   cursor: pointer;
+  position: relative;
+  transition: background-color 1s;
+
+  .onOff {
+    display: flex;
+    position: absolute;
+    height: 95%;
+    width: 60px;
+    border-radius: 50%;
+    background-image: linear-gradient(-100deg, rgb(117, 113, 113), #000);
+    transition: .7s ease-in-out;
+  }
+}
+
+.themeToggle.active {
+  background-color: hsla(246, 35%, 44%, 0.199);
+  
+  .onOff.active {
+    background-image: linear-gradient(90deg, rgb(15, 15, 17), rgb(212, 211, 211));
+    transform: translateX(40px);
+  }
 }
 
 // MEDIA

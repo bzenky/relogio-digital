@@ -27,13 +27,14 @@ function themeToggle(){
   let clock = document.querySelector('.clock')
   let box = document.querySelectorAll('.box')
   let def = document.querySelector('.def')
-  // console.log(box)
-  
+  let onOff = document.querySelector('.onOff')
+  let themeToggle = document.querySelector('.themeToggle')
 
   body.classList.toggle("lightTheme")
   clock.classList.toggle("lightTheme")
-  // box.classList.toggle("lightTheme")
   def.classList.toggle("lightTheme")
+  themeToggle.classList.toggle("active")
+  onOff.classList.toggle("active")
 
   box.forEach(item => item.classList.toggle("lightTheme"))
   
