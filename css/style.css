@@ -10,9 +10,14 @@ body {
   height: 100vh;
   background-color: #1b1818;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   font-family: "Secular One", sans-serif;
+}
+
+.body.lightTheme {
+  background-image: linear-gradient(145deg, white, #d0c8f3);
 }
 
 .clock {
@@ -24,6 +29,21 @@ body {
   border: 1px solid gray;
   box-shadow: 0 0 5px blue, 0 0 25px #4a4add;
   color: black;
+  position: relative;
+}
+.clock .def {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  bottom: 0;
+  justify-content: space-evenly;
+  text-align: center;
+}
+.clock .def span {
+  width: 180px;
+  color: white;
+  font-size: 24px;
+  text-shadow: 0 2px 5px gray;
 }
 .clock .box {
   display: flex;
@@ -35,4 +55,24 @@ body {
 }
 .clock .box span {
   font-size: 130px;
+}
+
+.clock.lightTheme {
+  color: #2d38ce;
+  box-shadow: 0 0 5px #333333, 0 0 25px #1b1b1b;
+}
+.clock.lightTheme .box.lightTheme {
+  background-color: #d1d1d1;
+}
+.clock.lightTheme .def.lightTheme span {
+  color: #0f0a0a;
+}
+
+.themeToggle {
+  margin-top: 50px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 0, 0.438);
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */

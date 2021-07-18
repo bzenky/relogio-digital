@@ -11,9 +11,14 @@ body {
   height: 100vh;
   background-color: hsl(0, 4%, 10%);
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   font-family: 'Secular One', sans-serif;
+}
+
+.body.lightTheme {
+  background-image: linear-gradient(145deg, rgba(255, 255, 255,1), rgb(208, 200, 243));
 }
 
 .clock {
@@ -25,6 +30,23 @@ body {
   border: 1px solid gray;
   box-shadow: 0 0 5px blue, 0 0 25px rgb(74, 74, 221);
   color: black;
+  position: relative;
+
+  .def {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    bottom: 0;
+    justify-content: space-evenly;
+    text-align: center;
+
+    span {
+      width: 180px;
+      color: hsl(0, 0%, 100%);
+      font-size: 24px;
+      text-shadow: 0 2px 5px gray;
+    }
+  }
 
   .box {
     display: flex;
@@ -38,4 +60,28 @@ body {
       font-size: 130px;
     }
   }
+}
+
+.clock.lightTheme {
+  color: rgb(45, 56, 206);
+  box-shadow: 0 0 5px rgb(51, 51, 51), 0 0 25px rgb(27, 27, 27);
+
+  .box.lightTheme {
+    background-color: rgb(209, 209, 209);
+  }  
+
+  .def.lightTheme {
+    span {
+      color: hsl(0, 20%, 5%);
+    }
+  }
+}
+
+.themeToggle {
+  margin-top: 50px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 0, 0.438);
+  cursor: pointer;
 }
