@@ -3,8 +3,8 @@ function clock() {
   const minutes = document.querySelector('.mm')
   const seconds = document.querySelector('.ss')
 
-  var hourNow = new Date().getHours()
-  var minutesNow = new Date().getMinutes()
+  let hourNow = new Date().getHours()
+  let minutesNow = new Date().getMinutes()
   let secondsNow = new Date().getSeconds()
 
   hourNow = ( hourNow < 10 ) ? '0' + hourNow : hourNow;
@@ -23,10 +23,10 @@ var now = setInterval(clock, 1000)
 const btnTheme = document.querySelector('.themeToggle')
 
 function themeToggle(){
-  var body = document.querySelector('.body')
-  var clock = document.querySelector('.clock')
-  var box = document.querySelectorAll('.box')
-  var def = document.querySelector('.def')
+  let body = document.querySelector('.body')
+  let clock = document.querySelector('.clock')
+  let box = document.querySelectorAll('.box')
+  let def = document.querySelector('.def')
   // console.log(box)
   
 
