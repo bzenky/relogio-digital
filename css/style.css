@@ -17,17 +17,17 @@ body {
 }
 
 .body.lightTheme {
-  background-image: linear-gradient(145deg, white, #d0c8f3);
+  background-image: linear-gradient(145deg, white, #d0c9f3);
 }
 
 .clock {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
   width: 700px;
   height: 250px;
   border: 1px solid gray;
-  box-shadow: 0 0 5px blue, 0 0 25px #4a4add;
+  box-shadow: 0 0 5px blue, 0 0 25px #4b4bdd;
   color: black;
   position: relative;
 }
@@ -36,11 +36,11 @@ body {
   display: flex;
   width: 100%;
   bottom: 0;
-  justify-content: space-evenly;
+  justify-content: space-between;
   text-align: center;
 }
 .clock .def span {
-  width: 180px;
+  width: 200px;
   color: white;
   font-size: 24px;
   text-shadow: 0 2px 5px gray;
@@ -51,18 +51,22 @@ body {
   align-items: center;
   width: 180px;
   height: 175px;
-  background-color: #e7e7e775;
+  background-color: rgba(232, 232, 232, 0.459);
 }
 .clock .box span {
   font-size: 130px;
 }
+.clock .colon {
+  color: rgba(255, 0, 0, 0.767);
+  font-size: 62px;
+}
 
 .clock.lightTheme {
-  color: #2d38ce;
-  box-shadow: 0 0 5px #333333, 0 0 25px #1b1b1b;
+  color: #2d38cd;
+  box-shadow: 0 0 5px #333333, 0 0 25px #1c1c1c;
 }
 .clock.lightTheme .box.lightTheme {
-  background-color: #d1d1d1;
+  background-color: #c5c4c4;
 }
 .clock.lightTheme .def.lightTheme span {
   color: #0f0a0a;
@@ -74,8 +78,9 @@ body {
   margin-top: 50px;
   width: 100px;
   height: 65px;
+  border: 2px solid rgba(38, 38, 38, 0.788);
   border-radius: 50px;
-  background-color: #31312d;
+  background-color: #30302c;
   cursor: pointer;
   position: relative;
   transition: background-color 1s;
@@ -83,19 +88,22 @@ body {
 .themeToggle .onOff {
   display: flex;
   position: absolute;
-  height: 95%;
-  width: 60px;
+  height: 90%;
+  width: 55px;
+  margin-left: 2px;
   border-radius: 50%;
-  background-image: linear-gradient(-100deg, #757171, #000);
-  transition: 0.7s ease-in-out;
+  background-image: linear-gradient(-100deg, #757070, black);
+  transition: 0.5s ease-in-out;
+  box-shadow: 0 1px 3px rgba(255, 0, 0, 0.432);
 }
 
 .themeToggle.active {
-  background-color: rgba(81, 73, 151, 0.199);
+  background-color: rgba(69, 54, 129, 0.411);
+  border: 2px solid rgba(59, 59, 59, 0.123);
 }
 .themeToggle.active .onOff.active {
-  background-image: linear-gradient(90deg, #0f0f11, #d4d3d3);
-  transform: translateX(40px);
+  background-image: linear-gradient(90deg, #0e0e10, #d4d3d3);
+  transform: translateX(38px);
 }
 
 @media (max-width: 720px) {
@@ -116,5 +124,9 @@ body {
   }
   .def span {
     height: 180px;
+  }
+
+  .colon {
+    display: none;
   }
 }/*# sourceMappingURL=style.css.map */
