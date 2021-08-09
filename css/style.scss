@@ -9,7 +9,7 @@
 body {
   width: 100vw;
   height: 100vh;
-  background-color: hsl(0, 4%, 10%);
+  background-color: #011627;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -18,7 +18,7 @@ body {
 }
 
 .body.lightTheme {
-  background-image: linear-gradient(145deg, hsl(0, 0%, 100%), hsl(251, 64%, 87%));
+  background-color: #F1FAEE;
 }
 
 .clock {
@@ -29,7 +29,7 @@ body {
   height: 250px;
   border: 1px solid hsl(0, 0%, 50%);
   box-shadow: 0 0 5px hsl(240, 100%, 50%), 0 0 25px hsl(240, 68%, 58%);
-  color: hsl(0, 0%, 0%);
+  color: #F71735;
   position: relative;
 
   .def {
@@ -42,7 +42,7 @@ body {
 
     span {
       width: 200px;
-      color: hsl(0, 0%, 100%);
+      color: #FDFFFC;
       font-size: 24px;
       text-shadow: 0 2px 5px hsl(0, 0%, 50%);
     }
@@ -54,7 +54,7 @@ body {
     align-items: center;
     width: 180px;
     height: 175px;
-    background-color: hsla(0, 0%, 91%, 0.459);
+    background-color: #41ead40c;
 
     span {
       font-size: 130px;
@@ -62,22 +62,22 @@ body {
   }
 
   .colon {
-    color: hsla(0, 100%, 50%, 0.767);
+    color: #F71735;
     font-size: 62px;
   }
 }
 
 .clock.lightTheme {
-  color: hsl(236, 64%, 49%);
-  box-shadow: 0 0 5px hsl(0, 0%, 20%), 0 0 25px hsl(0, 0%, 11%);
+  color: #1D3557;
+  box-shadow: 0 0 5px hsla(0, 0%, 20%, 0.651), 0 0 25px hsla(0, 0%, 11%, 0.582);
 
   .box.lightTheme {
-    background-color: hsl(0, 1%, 77%);
+    background-color: #a8dadc5b;
   }  
 
   .def.lightTheme {
     span {
-      color: hsl(0, 20%, 5%);
+      color: #457B9D;
     }
   }
 }
@@ -109,7 +109,7 @@ body {
 }
 
 .themeToggle.active {
-  background-color: hsla(252, 41%, 36%, 0.411);
+  background-color: hsl(254, 84%, 93%);
   border: 2px solid hsla(0, 0%, 23%, 0.123);
   
   .onOff.active {

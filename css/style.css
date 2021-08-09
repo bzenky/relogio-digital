@@ -8,7 +8,7 @@
 body {
   width: 100vw;
   height: 100vh;
-  background-color: #1b1818;
+  background-color: #011627;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -17,7 +17,7 @@ body {
 }
 
 .body.lightTheme {
-  background-image: linear-gradient(145deg, white, #d0c9f3);
+  background-color: #F1FAEE;
 }
 
 .clock {
@@ -28,7 +28,7 @@ body {
   height: 250px;
   border: 1px solid gray;
   box-shadow: 0 0 5px blue, 0 0 25px #4b4bdd;
-  color: black;
+  color: #F71735;
   position: relative;
 }
 .clock .def {
@@ -41,7 +41,7 @@ body {
 }
 .clock .def span {
   width: 200px;
-  color: white;
+  color: #FDFFFC;
   font-size: 24px;
   text-shadow: 0 2px 5px gray;
 }
@@ -51,25 +51,25 @@ body {
   align-items: center;
   width: 180px;
   height: 175px;
-  background-color: rgba(232, 232, 232, 0.459);
+  background-color: #41ead40c;
 }
 .clock .box span {
   font-size: 130px;
 }
 .clock .colon {
-  color: rgba(255, 0, 0, 0.767);
+  color: #F71735;
   font-size: 62px;
 }
 
 .clock.lightTheme {
-  color: #2d38cd;
-  box-shadow: 0 0 5px #333333, 0 0 25px #1c1c1c;
+  color: #1D3557;
+  box-shadow: 0 0 5px rgba(51, 51, 51, 0.651), 0 0 25px rgba(28, 28, 28, 0.582);
 }
 .clock.lightTheme .box.lightTheme {
-  background-color: #c5c4c4;
+  background-color: #a8dadc5b;
 }
 .clock.lightTheme .def.lightTheme span {
-  color: #0f0a0a;
+  color: #457B9D;
 }
 
 .themeToggle {
@@ -98,7 +98,7 @@ body {
 }
 
 .themeToggle.active {
-  background-color: rgba(69, 54, 129, 0.411);
+  background-color: #e5defc;
   border: 2px solid rgba(59, 59, 59, 0.123);
 }
 .themeToggle.active .onOff.active {
